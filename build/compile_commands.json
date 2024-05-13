@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Github/StudentSystem/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\gcc.exe  @CMakeFiles/StudentSystem.dir/includes_C.rsp -g   -o CMakeFiles\\StudentSystem.dir\\src\\StudentSystemManger.c.obj   -c D:\\Github\\StudentSystem\\src\\StudentSystemManger.c",
+  "file": "D:/Github/StudentSystem/src/StudentSystemManger.c"
+}
+]
