@@ -77,15 +77,15 @@ CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj: CMakeFiles/StudentSy
 CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj: CMakeFiles/StudentSystem.dir/includes_C.rsp
 CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj: ../src/StudentSystemManger.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Github\StudentSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.obj   -c D:\Github\StudentSystem\src\StudentSystemManger.c
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.obj   -c D:\Github\StudentSystem\src\StudentSystemManger.c
 
 CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.i"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Github\StudentSystem\src\StudentSystemManger.c > CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Github\StudentSystem\src\StudentSystemManger.c > CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.i
 
 CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.s"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Github\StudentSystem\src\StudentSystemManger.c -o CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Github\StudentSystem\src\StudentSystemManger.c -o CMakeFiles\StudentSystem.dir\src\StudentSystemManger.c.s
 
 # Object files for target StudentSystem
 StudentSystem_OBJECTS = \
