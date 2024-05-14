@@ -26,3 +26,5 @@ void DeleteStudent(Node *head);
 void CountStudent(Node *head);
 
 void ReviseStudent(Node *head);
+
+void SortScore(Node* head);
