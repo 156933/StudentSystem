@@ -6,9 +6,10 @@
 			[
 				{
 					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.0.0"
+						"string" : "3.5.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -38,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "StudentSystem::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StudentSystem-Debug-703ad86a415d8b575ce1.json",
+					"jsonFile" : "target-StudentSystem-Debug-87e42168c9caaf0de704.json",
 					"name" : "StudentSystem",
 					"projectIndex" : 0
 				}
@@ -48,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Github/StudentSystem/build",
-		"source" : "D:/Github/StudentSystem"
+		"build" : "E:/github/StudentSystem/build",
+		"source" : "E:/github/StudentSystem"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 0
+		"minor" : 7
 	}
 }

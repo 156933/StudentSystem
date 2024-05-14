@@ -28,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 9,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -45,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g  "
+					"fragment" : "-g"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/Github/StudentSystem/./header"
+					"path" : "E:/github/StudentSystem/./header"
 				}
 			],
 			"language" : "C",

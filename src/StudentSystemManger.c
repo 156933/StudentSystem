@@ -7,8 +7,6 @@ int main()
     Node *head = malloc(sizeof(Node));
     head->next = NULL;
 
-
-    
     while(1)
     {
         Welcome();
@@ -27,6 +25,10 @@ int main()
             DeleteStudent(head);
         case 4:
             CountStudent(head);
+            break;
+        case 5:
+            ReviseStudent(head);
+            break;
         default:
             break;
         }
@@ -45,6 +47,7 @@ void Welcome()
     printf("2.打印学生信息\n");
     printf("3.删除学生\n");
     printf("4.统计学生信息\n");
+    printf("5.修改学生信息\n");
     printf("**************\n");
     printf("选择:");
 }
@@ -145,4 +148,37 @@ void CountStudent(Node *head)
 
     printf("共有%d学生\n",cont);
     system("pause");
+}
+
+
+void ReviseStudent(Node *head)
+{
+    int dNum;
+    Node *move = head->next;
+    PrintStudent(head);
+    int j = 0; //判断是否有这个人
+    
+    printf("请输入你要修改学生的学号:");
+    scanf("%d",&dNum);
+
+    while(move)
+    {
+        if(move->stu.stuNum == dNum)
+        {
+            j = 1;
+            break;
+        }
+        move = move->next;
+    }
+
+    if( j == 1)
+    {
+        printf("请输入你要修改的内容(学号 姓名 成绩):");
+        scanf("%d %s %d",&move->stu.stuNum,move->stu.name,&move->stu.score);
+        system("pause");
+        printf("修改成功\n");
+    }else{
+        printf("查无此人\n");
+        system("pause");
+    }
 }
