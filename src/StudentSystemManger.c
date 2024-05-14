@@ -7,6 +7,7 @@ int main()
     Node *head = malloc(sizeof(Node));
     head->next = NULL;
 
+    LoadStudent(head);
     while(1)
     {
         Welcome();
@@ -29,6 +30,9 @@ int main()
         case 5:
             ReviseStudent(head);
             break;
+        case 6:
+            return 0;
+            break;
         default:
             break;
         }
@@ -42,12 +46,16 @@ int main()
 
 
 void Welcome()
-{
+{   
+    printf("**************\n");
+    printf("学生管理系统\n");
+    printf("**************\n");
     printf("1.录入学生信息\n");
     printf("2.打印学生信息\n");
     printf("3.删除学生\n");
     printf("4.统计学生信息\n");
     printf("5.修改学生信息\n");
+    printf("6.退出系统\n");
     printf("**************\n");
     printf("选择:");
 }
@@ -68,6 +76,7 @@ void InputStudent(Node *head)
     }
 
     move->next = new;
+    SaveStdent(head);
     
 }
 
@@ -110,6 +119,7 @@ void DeleteStudent(Node *head)
                     }
                     move = move->next;
                 }
+                SaveStdent(head);
 
              break;   
             }
@@ -127,6 +137,7 @@ void DeleteStudent(Node *head)
                     }
                     move = move->next;
                 }
+                SaveStdent(head);
 
              break;   
             }
@@ -175,10 +186,57 @@ void ReviseStudent(Node *head)
     {
         printf("请输入你要修改的内容(学号 姓名 成绩):");
         scanf("%d %s %d",&move->stu.stuNum,move->stu.name,&move->stu.score);
+        SaveStdent(head);
         system("pause");
         printf("修改成功\n");
     }else{
         printf("查无此人\n");
         system("pause");
     }
+}
+
+void SaveStdent(Node *head)
+{
+    FILE *file = fopen("./student.info","w");
+
+    Node *move = head->next;
+
+    while(move)
+    {
+        if((fwrite(&move->stu,sizeof(Student),1,file))!=1)
+        {
+            printf("保存失败\n");
+            return;
+        };
+        move = move->next;
+    }
+    fclose(file);
+}
+
+void LoadStudent(Node *head)
+{
+    FILE *file = fopen("./student.info","r");
+
+    if(!file)
+    {
+        printf("文件不存在\n");
+        return;
+    }
+
+    Node *new = malloc(sizeof(Node));
+    new->next = NULL;
+
+    Node *move = head;
+
+    while(fread(&new->stu,sizeof(Student),1,file)==1)
+    {
+        move->next = new;
+        move = new;
+
+        new = malloc(sizeof(Node));
+        new->next = NULL;
+    }
+    free(new);
+    fclose(file);
+    printf("载入完成\n");
 }

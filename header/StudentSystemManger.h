@@ -28,3 +28,7 @@ void CountStudent(Node *head);
 void ReviseStudent(Node *head);
 
 void SortScore(Node* head);
+
+void SaveStdent(Node *head);
+
+void LoadStudent(Node *head);
