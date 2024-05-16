@@ -1,3 +1,0 @@
-D:/Github/StudentSystem/build/CMakeFiles/StudentSystem.dir
-D:/Github/StudentSystem/build/CMakeFiles/edit_cache.dir
-D:/Github/StudentSystem/build/CMakeFiles/rebuild_cache.dir
