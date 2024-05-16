@@ -34,6 +34,9 @@ int main()
         case 6:
             return 0;
             break;
+        case 7:
+            SortScore(head);
+            break;
         default:
             break;
         }
@@ -57,6 +60,7 @@ void Welcome()
     printf("4.统计学生信息\n");
     printf("5.修改学生信息\n");
     printf("6.退出系统\n");
+    printf("7.排序\n");
     printf("**************\n");
     printf("选择:");
 }
@@ -241,3 +245,22 @@ void LoadStudent(Node *head)
     fclose(file);
     printf("载入完成\n");
 }
+
+
+void SortScore(Node* head)
+{
+    for(Node* turn = head->next;turn->next != NULL ; turn = turn->next)
+    {
+        for(Node *move = head->next;move->next!=NULL ; move= move->next)
+        {
+            if(move->stu.score > move->next->stu.score)
+            {
+                int temp = move->stu.score;
+                move->stu.score = move->next->stu.score;
+                move->next->stu.score = temp;
+            }
+        }
+    }
+    SaveStdent(head);
+}
+
