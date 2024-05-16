@@ -1,3 +1,3 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\StudentSystem.dir/objects.a
-C:\mingw64\bin\ar.exe qc CMakeFiles\StudentSystem.dir/objects.a @CMakeFiles\StudentSystem.dir\objects1.rsp
-C:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\StudentSystem.dir/objects.a -Wl,--no-whole-archive -o StudentSystem.exe -Wl,--out-implib,libStudentSystem.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StudentSystem.dir\linkLibs.rsp
+"C:\Program Files\cmake-3.17.0-rc3-win64-x64\bin\cmake.exe" -E rm -f CMakeFiles\StudentSystem.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\StudentSystem.dir/objects.a @CMakeFiles\StudentSystem.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\StudentSystem.dir/objects.a -Wl,--no-whole-archive  -o StudentSystem.exe -Wl,--out-implib,libStudentSystem.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StudentSystem.dir\linklibs.rsp

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj"
-  "CMakeFiles/StudentSystem.dir/src/StudentSystemManger.c.obj.d"
   "StudentSystem.exe"
   "StudentSystem.exe.manifest"
   "StudentSystem.pdb"

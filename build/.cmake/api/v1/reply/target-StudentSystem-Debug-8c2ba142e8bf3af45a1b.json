@@ -45,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g  "
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "E:/github/StudentSystem/./header"
+					"path" : "D:/Github/StudentSystem/./header"
 				}
 			],
 			"language" : "C",
